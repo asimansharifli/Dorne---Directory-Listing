@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title-->
+    <title>Dorne - Directory & Listing Template | Explore</title>
+     <!-- Favicon -->
+     <link rel="icon" href="../../Assets/Images/Logo/favicon.ico">   
+    <!-- Main Style -->
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!-- Start Header-->
+    <header id="header">
+        <!-- Registr Form-->
+        <div class="registr" id="registr">  	
+            <div class="registr_close_btn" id="registrCloseBtn">
+                <i class="far fa-times-circle"></i>                
+            </div>
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="registrname" id="registrname" placeholder="User name" required="registrname">
+                        <input type="email" name="registremail" id="registremail" placeholder="Email" required="registremail">
+                        <input type="password" name="registrpswd" id="registrpswd" placeholder="Password" required="registrpswd">
+                        <button id="registrsumbit">Sign up</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+        </div>
+        <!-- Start Open Search Button-->
+        <div id="dorne_search_form" class="search">
+            <div class="container">
+                <div class="dorne_search_form">
+                    <div class="search_close_btn" id="closeBtn">
+                        <i class="far fa-times-circle"></i>                
+                    </div>
+                    <form action="#">
+                        <input type="search" name="caviarSearch" id="search" placeholder="Search Your Desire Destinations or Events">
+                        <input type="submit" class="none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Open Search Button-->
+        
+        <!-- Start Container Header -->
+        <div class="container_header">
+        <!-- Start Header -->           
+            <div class="header">
+            <!-- Start Navigation Bar -->
+                <div class="navigation_bar">
+                    <!-- Add logo-->
+                    <figure class="logo">
+                        <a href="../../index.html">                           
+                            <img src="../../Assets/Images/Logo/logo.png" alt="Dorne - Directory & Listing Template">
+                        </a> 
+                    </figure>
+                    <!-- Start Navbar-->
+                    <div class="navbar" id="dorneNav">
+                        <!-- Start Navbar-->
+                        <nav class="nav">
+                            <!-- Start Navar List-->
+                            <ul class="navbar_list" id="dorneMenu">
+                                <li class="navbar_list__item" >
+                                    <a class="navbar_list__item___link "  href="../../index.html">Home</a>
+                                </li>
+                                <li class="navbar_list__item dropdown" >
+                                    <a class="active navbar_list__item___link dropdown"  id="dropdown" role="button" >Explore <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <div class="dropdown_menu" id="navbar_dropdown">
+                                            <a class="dropdown_item" href="../../index.html">Home</a>
+                                            <a class="dropdown_item" href="explore.html">Explore</a>
+                                            <a class="dropdown_item" href="../Listings/listings.html">Listing</a>
+                                            <a class="dropdown_item" href="../Single Listing/single_listing.html">Single Listing</a>
+                                            <a class="dropdown_item" href="../Contact/contact.html">Contact</a>
+                                        </div>
+                                </li>
+                                <li class="navbar_list__item dropdown">
+                                    <a class="navbar_list__item___link dropdown"  id="dropdown2" role="button" >Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <div class="dropdown_menu" id="navbar_dropdown2">
+                                            <a class="dropdown_item" href="../../index.html">Home</a>
+                                            <a class="dropdown_item" href="explore.html">Explore</a>
+                                            <a class="dropdown_item" href="../Listings/listings.html">Listing</a>
+                                            <a class="dropdown_item" href="../Single Listing/single_listing.html">Single Listing</a>
+                                            <a class="dropdown_item" href="../Contact/contact.html">Contact</a>
+                                        </div>
+                                </li>
+                                <li class="navbar_list__item">
+                                    <a class="  navbar_list__item___link " href="../Contact/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- End Navar List-->   
+                        </nav>
+                        <!-- End Navbar-->
+                        <!-- Start Nabar Right-->
+                        <div class="navbar_right">
+                            <!-- Start Search Button-->
+                            <div class="dorne_search_btn" id="dorne_search_btn">
+                                <a id="search_btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                            </div>
+                            <!-- End Search Button-->
+                            <!-- Start Register-->
+                            <div class="dorne_signin_btn" id="dorne_signin_btn">
+                                <a href="#" >Sign in or Register</a>
+                            </div>
+                            <!-- End Register-->
+                        </div>
+                        <!-- Start Nabar Right-->
+
+                    </div>
+                        <!-- Top Navigation Menu -->
+                        <div class="topnav">
+                            <a href="javascript:void(0);" class="icon" id="icon">
+                            <i class="fa fa-bars"></i>
+                            </a>
+                            <div id="myLinks" class="nav_link">
+                                <a href="../../index.html">Home</a>
+                                <a href="explore.html"class="active" >Explore</a>
+                                <a href="../Listings/listings.html" >Listings</a>
+                                <a href="../Single Listing/single_listing.html">Single Listing</a>
+                                <a href="../Contact/contact.html"  >Contact</a>  
+                                <div class="dorne_search_btn" id="search__btn">
+                                    <a id="search_btn"  style="cursor: pointer;" ><i style="margin-right: 5px;" class="fa fa-search" aria-hidden="true"></i> Search</a>                 
+                                </div>    
+                                <div class=dorne_signin_btn"" id="signin_btn">
+                                    <a id="signin_btn"  style="cursor: pointer;" >Sign in or Register</a>
+                                </div> 
+                            </div>
+                        </div>                
+                </div>
+            <!-- End Navigation Bar -->          
+            </div>
+        <!-- End Header -->           
+        </div>
+        <!-- End Container Header -->        
+    </header>
+    <!-- End Header-->
+    <!-- Start Main-->
+    <main>
+        <!-- Start Inroduction Section -->
+        <section id="introduction">
+        </section>
+        <!-- End Inroduction Section -->
+        <!-- Start Explore Section -->
+        <section id="dorne_explore_area">
+            <div class="dorne_explore_area">
+                <!-- Start Search Area-->
+                <div class="explore_search_area">
+                    <!-- Start Search Form-->
+                    <div class="explore_search_form">
+                        <h3>What are you looking for?</h3>
+                        <div class="nav nav_table" id="heroTab" role="tablist">
+                            <a class="nav_item nav_link active" id="nav_places_table"  href="#nav-places" >Places</a>
+                            <a class="nav_item nav_link" id="nav_events_table"  href="#nav-events" >Events</a>
+                        </div>
+                        <!-- Start Table Content-->
+                        <div class="table_content" id="nav_tabContent">
+                        <div class="table_page fade show active" id="nav_places">
+                            <form action="#">
+                                <select class="custom_select" id="destinations">
+                                    <option selected="">Your Destinations</option>
+                                    <option value="1">New York</option>
+                                    <option value="2">Latvia</option>
+                                    <option value="3">Dhaka</option>
+                                    <option value="4">Melbourne</option>
+                                    <option value="5">London</option>
+                                </select>
+                                    <select class="custom_select" id="catagories">
+                                    <option selected="">All Catagories</option>
+                                    <option value="1">Catagories 1</option>
+                                    <option value="2">Catagories 2</option>
+                                    <option value="3">Catagories 3</option>
+                                    <option value="3">Catagories 4</option>
+                                </select>
+                                <select class="custom_select" id="price-range">
+                                    <option selected="">Price Range</option>
+                                    <option value="1">$100 - $499</option>
+                                    <option value="2">$500 - $999</option>
+                                    <option value="3">$1000 - $4999</option>
+                                    <option value="3">$5000+</option>
+                                </select>
+                                <select class="custom_select" id="proximity">
+                                    <option selected="">Proximity</option>
+                                    <option value="1">Proximity 1</option>
+                                    <option value="2">Proximity 2</option>
+                                    <option value="3">Proximity 3</option>
+                                    <option value="3">Proximity 4</option>
+                                    <option value="3">Proximity 5</option>
+                                </select>
+                                <div class="check_boxes">
+                                    <div class="check_box" id="credits">
+                                        <label class="custom_control custom_checkbox ">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="credits_control" ></span>
+                                            <span class="custom_control_description">Accepts Credit Cards</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_box" id="parking">
+                                        <label class="custom_control custom_checkbox">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="parking_control"></span>
+                                            <span class="custom_control_description">Bike Parking</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_box" id="internet">
+                                        <label class="custom_control custom_checkbox">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="internet_control"></span>
+                                            <span class="custom_control_description">Wireless Internet</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_box" id="reservation">
+                                        <label class="custom_control custom_checkbox ">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="reservation_control"></span>
+                                            <span class="custom_control_description">Reservations</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_box" id="private">
+                                        <label class="custom_control custom_checkbox ">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="private_control"></span>
+                                            <span class="custom_control_description">Privat Parking</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_box" id="smoking">
+                                        <label class="custom_control custom_checkbox">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="smoking_control"></span>
+                                            <span class="custom_control_description">Smoking Area</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_box" id="whellchair">
+                                        <label class="custom_control custom_checkbox ">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="whellchair_control"></span>
+                                            <span class="custom_control_description">Wheelchair Accesible</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_box" id="coupons">
+                                        <label class="custom_control custom_checkbox ">
+                                            <input type="checkbox" class="custom_control_input">
+                                            <span class="custom_control_indicator" id="coupons_control"></span>
+                                            <span class="custom_control_description">Coupons</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="explore_sumbit places"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                            </form>
+                        </div>
+                        <div class="table_page fade" id="nav_events">
+                            <form action="#">
+                                <select class="custom_select" id="events_destinations">
+                                    <option selected="">Your Destinations</option>
+                                    <option value="1">New York</option>
+                                    <option value="2">Latvia</option>
+                                    <option value="3">Dhaka</option>
+                                    <option value="4">Melbourne</option>
+                                    <option value="5">London</option>
+                                </select>
+                                <select class="custom_select" id="events_catagories">
+                                    <option selected="">All Catagories</option>
+                                    <option value="1">Catagories 1</option>
+                                    <option value="2">Catagories 2</option>
+                                    <option value="3">Catagories 3</option>
+                                    <option value="3">Catagories 4</option>
+                                </select>
+                                <select class="custom_select" id="events_price_range">
+                                    <option selected="">Price Range</option>
+                                    <option value="1">$100 - $499</option>
+                                    <option value="2">$500 - $999</option>
+                                    <option value="3">$1000 - $4999</option>
+                                    <option value="3">$5000+</option>
+                                    </select>
+                                <select class="custom_select" id="events_proximity">
+                                    <option selected="">Proximity</option>
+                                    <option value="1">Proximity 1</option>
+                                    <option value="2">Proximity 2</option>
+                                    <option value="3">Proximity 3</option>
+                                    <option value="3">Proximity 4</option>
+                                    <option value="3">Proximity 5</option>
+                                </select>
+                                <button type="submit" class="explore_sumbit evets"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                            </form>
+                        </div>
+                        </div>
+                        <!-- End Table Content-->
+                    </div>
+                    <!-- End Search Form-->
+                    <!-- Start Search Result Card-->
+                    <div class="explore_search_result">
+                        <!-- Start Card-->
+                        <div class="single_features_area">
+                            <!-- Start Card Image-->
+                            <div class="features_area_image">
+                                <img src="../../Assets/Images/Featured Destinations/Ibiza.png " alt="Ibiza" >
+                            </div>
+                            <!-- End Card Image-->
+                            <!-- Start Price Start-->
+                            <div class="price_start">
+                                <p>FROM $ <span class="price">59</span> / <span class="time">night</span></p>
+                            </div>
+                            <!-- End Price Start-->
+                            <!-- Start Feature Content-->
+                            <div class="feature_content">
+                                <!-- Start Feature Title-->
+                                <div class="feature_title">
+                                    <h4 class="event_name">Ibiza</h4>
+                                    <p class="event_reason">Party</p>
+                                </div>
+                                <!-- End Feature Title-->
+                                <!-- Start Feature Fovorite-->
+                                <div class="feature_favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                                <!-- End Feature Fovorite-->
+                            </div>
+                            <!-- End Feature Content-->
+                        </div>
+                        <!-- End Card-->
+                        <!-- Start Card-->
+                        <div class="single_features_area">
+                            <!-- Start Card Image-->
+                            <div class="features_area_image">
+                                <img src="../../Assets/Images/Featured Destinations/Paris.png " alt="Paris" >
+                            </div>
+                            <!-- End Card Image-->
+                            <!-- Start Price Start-->
+                            <div class="price_start">
+                                <p>FROM $ <span class="price">59</span> / <span class="time">night</span></p>
+                            </div>
+                            <!-- End Price Start-->
+                            <!-- Start Feature Content-->
+                            <div class="feature_content">
+                                <!-- Start Feature Title-->
+                                <div class="feature_title">
+                                    <h4 class="event_name">Paris</h4>
+                                    <p class="event_reason">Luxury</p>
+                                </div>
+                                <!-- End Feature Title-->
+                                <!-- Start Feature Fovorite-->
+                                <div class="feature_favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                                <!-- End Feature Fovorite-->
+                            </div>
+                            <!-- End Feature Content-->
+                        </div>
+                        <!-- End Card-->
+                        <!-- Start Card-->
+                        <div class="single_features_area">
+                            <!-- Start Card Image-->
+                            <div class="features_area_image">
+                                <img src="../../Assets/Images/Featured Destinations/Lake Como.png " >
+                            </div>
+                            <!-- End Card Image-->
+                            <!-- Start Price Start-->
+                            <div class="price_start">
+                                <p>FROM $ <span class="price">59</span> / <span class="time">night</span></p>
+                            </div>
+                            <!-- End Price Start-->
+                            <!-- Start Feature Content-->
+                            <div class="feature_content">
+                                <!-- Start Feature Title-->
+                                <div class="feature_title">
+                                    <h4 class="event_name">Lake Como</h4>
+                                    <p class="event_reason">Spectacular</p>
+                                </div>
+                                <!-- End Feature Title-->
+                                <!-- Start Feature Fovorite-->
+                                <div class="feature_favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                                <!-- End Feature Fovorite-->
+                            </div>
+                            <!-- End Feature Content-->
+                        </div>
+                        <!-- End Card-->
+                        <!-- Start Card-->
+                        <div class="single_features_area">
+                            <!-- Start Card Image-->
+                            <div class="features_area_image">
+                                <img src="../../Assets/Images/Featured Destinations/Greece.png " alt="Greece">
+                            </div>
+                            <!-- End Card Image-->
+                            <!-- Start Price Start-->
+                            <div class="price_start">
+                                <p>FROM $ <span class="price">59</span> / <span class="time">night</span></p>
+                            </div>
+                            <!-- End Price Start-->
+                            <!-- Start Feature Content-->
+                            <div class="feature_content">
+                                <!-- Start Feature Title-->
+                                <div class="feature_title">
+                                    <h4 class="event_name">Greece</h4>
+                                    <p class="event_reason">Sunny</p>
+                                </div>
+                                <!-- End Feature Title-->
+                                <!-- Start Feature Fovorite-->
+                                <div class="feature_favourite">
+                                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                </div>
+                                <!-- End Feature Fovorite-->
+                            </div>
+                            <!-- End Feature Content-->
+                        </div>
+                        <!-- End Card-->
+                    </div>
+                    <!-- End Search Result Card-->
+                </div>
+                <!-- End Search Area-->
+                <!-- Start Dorne Map Area-->                
+                <div class="dorne_map_area">
+                    <div class="iframe_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596117285!2d-74.25986732363226!3d40.697149414875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2s!4v1648813871529!5m2!1str!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                </div>
+                <!-- End Dorne Map Area-->                
+
+            </div>
+        </section>
+        <!-- End Explore Section -->
+
+    </main>
+    <!-- End Main-->
+     <!-- Start Footer -->
+     <footer id="footer">
+        <!-- Start Container_Footer -->
+        <div class="container_footer">
+            <!-- Start All Footer -->
+            <div class="footer">
+                <!-- Start Footer Text -->
+                <div class="footer_text">
+                    <p>                
+                    Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>                
+                    </p>
+                </div>
+                <!-- End Footer Text -->
+                <!-- Start Footer Social  -->
+                <div class="footer_social__btns">
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+                    <a href="https://www.behance.net/"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+                    <a href="https://facebook.com/"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
+                </div>
+                <!-- End Footer Social  -->
+            </div>
+            <!-- End All Footer -->
+        </div>
+        <!-- End Container_Footer -->
+    </footer>
+   <!-- End Footer-->
+     <!-- Start Scroll Up-->
+     <div class="scroll_up" id="sroll_btn" onclick="topFunction()">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- End Scroll Up-->
+   <!-- Fonrawesome Script-->
+   <script
+   src="https://kit.fontawesome.com/2950db5552.js"
+   crossorigin="anonymous"></script>
+   <!-- All Script-->
+   <script src="../../Assets/Js/all_page.js"></script>
+   <!-- Page Script -->
+   <script src="./Assets/Js/explore.js"></script>
+</html>

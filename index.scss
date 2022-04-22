@@ -1,0 +1,1423 @@
+@import "./Assets/Style/all";
+body{
+
+    main{
+    //Dorne Welcome Area
+        #dorne_welcome_area{
+            background-image: url("./Assets/Icon/hero-1.jpg.webp");
+            width: 100%;
+            height: 945px;
+            position: relative;
+            background-position: center center;
+            background-size: cover;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(14, 2, 35, 0.5);
+                z-index: -1;
+            }
+            .container_fluid{
+                .dorne_welcome_area{
+                    width: 100%;
+                    @include display(center,center);
+                    flex-direction: column;
+                    height: 100%;
+                    flex-wrap: wrap;
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    .hero_welcome_area{
+                        flex: 0 0 83.333333%;
+                        max-width: 83.333333%;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        .hero_content{
+                            h1{
+                                color: $Text_Color;
+                                font-size: 72px;
+                                margin-bottom: 8px;
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: 600;
+                                line-height: 1.3;
+                            }
+                            h3{
+                                color: $Text_Color;
+                                margin-bottom: 0;
+                                padding-left: 5px;
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: 600;
+                                line-height: 1.3;
+                                font-size: 24px;
+                            }
+                        }
+                        .hero_search_form{
+                            margin-top: 90px;
+                            position: relative;
+                            .nav_table{
+                                &.nav{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                }
+                                .nav_item{
+                                    border: none;
+                                    border-top-left-radius: 0;
+                                    border-top-right-radius: 0;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    color: $Text_Color;
+                                    background-color: rgba(144, 103, 238, 0.65);
+                                    text-transform: uppercase;
+                                    min-width: 100px;
+                                    height: 44px;
+                                    line-height: 44px;
+                                    padding: 0;
+                                    text-align: center;
+                                    margin-bottom: -1px;
+                                    &.active{
+                                        color: $Text_Color;
+                                        background-color: rgba(67, 25, 161, 0.65);
+                                        border-color: transparent;
+                                    }
+                                }
+                            }
+                            .table_content{
+                                .table_page{
+                                    padding: 35px;
+                                    display: none;
+                                    background-color: rgba(67, 25, 161, 0.65);
+                                    h6{
+                                        color: $Text_Color;
+                                        font-size: 18px;
+                                        margin-bottom: 25px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-weight: 600;
+                                        line-height: 1.3;
+                                    }
+                                    form{
+                                        max-width: 100%;
+                                        display: flex;
+                                        .custom_select{
+                                            position: relative;
+                                            height: 52px;
+                                            padding: 0 80px 0 40px;
+                                            color: $Input-Color;
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            margin-right: 10px;
+                                            display: inline-block;
+                                            max-width: 100%;
+                                            line-height: 1.5;
+                                            vertical-align: middle;
+                                            background-size: 8px 10px;
+                                            appearance: none;
+                                            border: none;
+                                            outline: none;
+                                            background: $Text_Color url(./Assets/Icon/Select.svg) no-repeat right 12px center;
+                                            background-size: 8px 10px;
+                                            font-family: inherit;
+                                            &:focus{
+                                                border: 2px solid $Area-Background-Color;
+                                            }
+                                        }
+                                        .sumbit_btn{
+                                            min-width: 150px;
+                                            height: 52px;
+                                            background-color: $Primary;
+                                            border-radius: 0;
+                                            padding: 0 15px;
+                                            line-height: 50px;
+                                            color: $Text_Color;
+                                            font-weight: 600;
+                                            font-size: 15px;
+                                            transition-duration: 500ms;
+                                            text-align: center;
+                                            white-space: nowrap;
+                                            vertical-align: middle;
+                                            transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                                            transition: 0.7s;
+                                            &:hover{
+                                                background-color: $Secondary-Color;
+                                                border: 2px solid $Primary;
+                                            }
+                                        }
+                                    }
+                                     &.fade{
+                                        opacity: 0;
+                                        transition: opacity .15s linear;
+                                     }
+                                    &.show{
+                                        opacity: 1.0;
+                                    }
+                                    &.active{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .hero_social_btn{
+                position: absolute;
+                width: auto;
+                height: auto;
+                bottom: 90px;
+                left: 60px;
+                .social_title{
+                    transform: rotate(90deg);
+                    margin-left: -145px;
+                    @include display(center,center);
+                    h4{
+                        margin-bottom: 0;
+                        color: #fff;
+                        line-height: 1;
+                        margin-right: 30px;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    span{
+                        background-color: $Text_Color;
+                        width: 80px;
+                        height: 1px;
+                        display: block;
+                    }
+                }
+                .social_btns{
+                    margin-top: 170px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    a{
+                        font-size: 15px;
+                        color: $Text_Color;
+                        margin-top: 30px;
+                        font-weight: 600;
+                        transition-duration: 500ms;
+                        &:hover{
+                            color: $Secondary-Color;
+                        }
+                    }
+                }
+            }
+        }
+    //Dorne Catagory Area Section
+        #dorne_catagory_area{
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            .container{
+                max-width: 100%;
+                .dorne_catagory_area{
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    position: relative;
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    .all_catagories{
+                        width: 100%;
+                        position: relative;
+                        top: -50%;
+                        transform: translateY(-50%);
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-right: -15px;
+                        margin-left: -15px;
+                        .catagory_column{
+                            position: relative;
+                            flex: 0 0 20%;
+                            width: 20%;
+                            flex-grow: 1;
+                            min-height: 1px;
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            flex-basis: 0;
+                            flex:0 0 auto;
+                            .single_catagory_area{
+                                background-color: $Primary;
+                                text-align: center;
+                                padding: 60px 15px;
+                                transition-duration: 500ms;
+                                visibility: visible;
+                                animation-delay: 0.2s;
+                                animation-name: fadeInUpBig;
+                                &.animated {
+                                    animation-duration: 1.5s;
+                                    animation-fill-mode: both;
+                                }
+                                &.fadeInUpBig{
+
+                                    animation-name: fadeInUp;
+                                }
+
+                                @keyframes fadeInUp {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(20000px);
+                                    }
+                                
+                                    100% {
+                                        opacity: 10;
+                                        transform: translateY(0);
+                                    }
+                                }
+                                &:hover{
+                                    box-shadow: 3px 0px 30px 5px rgb(170, 163, 163);
+
+                                }
+                                .catagory_content{
+                                    img{
+                                        max-width: 100%;
+                                        height: auto;
+                                        margin-bottom: 15px;
+                                        vertical-align: middle;
+                                        object-fit: cover;
+                                    }
+                                    a{
+                                        h4{
+                                            margin-bottom: 0;
+                                            color: $Text_Color;
+                                            font-family: 'Open Sans', sans-serif;
+                                            font-weight: 600;
+                                            line-height: 1.3;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    // Dorne About  Area Section
+        #dorne_about_area{
+            padding-top: 0;
+            padding-bottom: 100px;
+            max-width: 100%;
+            .container{
+                .dorne_about_area{
+                    @include display(center,center );
+                    width: 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    flex-direction: column;
+                    .about_content{
+                        width: 100%;
+                        text-align: center;
+                        h2{
+                            font-size: 42px;
+                            @include display(center,center );
+                            flex: wrap;
+                            flex-direction: column;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            margin-bottom: 60px;
+                            line-height: 1.3;
+                            span{
+                                color: $Primary;
+                            }
+                            &:hover{
+                                color: $Primary;
+                                span{
+                                    color: black;
+                                }
+                            }
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 2;
+                            margin-bottom: 0;
+                            font-weight: 400;
+                            color: $Tagp-Color;
+                        }
+                    }
+                }
+            }
+        }
+    //dorne_editors_pick_area
+        #dorne_editors_pick_area{
+            width: 100%;
+            background-image: url("./Assets/Images/Background/PickArea.png");
+            background-position: center center;
+            background-size: cover;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            position: relative;
+            z-index: 1;
+            &::after{
+                background-color: rgba(14, 2, 35, 0.9);
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            .container{
+                .dorne_editors_pick_area{
+                    @include display(center,center);
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    .editors_pick_content{
+                        width: 100%;
+                        .editors_pick_text{
+                            width: 100%;
+                            margin-bottom: 100px;
+                            @include display(center,center);
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            text-align: center;
+                            span{
+                                width: 30px;
+                                height: 2px;
+                                background-color: $Text_Color;
+                                margin: 0 auto 15px;
+                                display: block;
+                                text-align: center;
+                            }
+                            h3{
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: 800;
+                                line-height: 1;
+                                color: $Text_Color;
+                                margin-bottom: 15px;
+                                text-transform: uppercase;
+                                font-size: 24px;
+                            }
+                            p{
+                                line-height: 1;
+                                font-size: 14;
+                                font-weight: 400;
+                                color: $Text_Color;
+                            }
+                        }
+                    }
+                    .pick_area_card_wrapper{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-right: -15px;
+                        margin-left: -15px;
+                        .pick_area_card{
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            display: flex;
+                            min-height: 1px;
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            flex-direction: column;
+                            .single_editors_pick_area{
+                                position: relative;
+                                margin-bottom: 20px;
+                                height: 50%;
+                                &.animated {
+                                    animation-duration: 2s;
+                                    animation-fill-mode: both;
+                                }
+                                &.fadeInUp{
+                                    visibility: visible;
+                                    animation-delay: 0.2s;
+                                    animation-name: fadeInUp;                                    
+                                }
+
+                                @keyframes fadeInUp {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(20px);
+                                    }
+                                
+                                    100% {
+                                        opacity: 10;
+                                        transform: translateY(0);
+                                    }
+                                }
+                                .card_image{
+                                    max-width: 100%;
+                                    height: auto;
+                                    overflow: hidden;
+                                    img{
+                                        vertical-align: middle;
+                                        max-width: 100%;
+                                        height: auto;
+                                        @include image_hover;
+                                    }
+                                }
+                                .editors_pick_info{
+                                    position: absolute;
+                                    top: 25px;
+                                    left: 25px;
+                                    z-index: 1;
+                                    .places_total_destinations{
+                                        display: flex;
+                                        .location{
+                                            height: 70px;
+                                            display: inline-block;
+                                            line-height: 70px;
+                                            background-color: $Primary;
+                                            padding: 0 50px;
+                                            font-size: 14px;
+                                            text-transform: uppercase;
+                                            font-weight: 800;
+                                            color: $Text_Color;
+                                        }
+                                        .destination{
+                                            height: 70px;
+                                            display: inline-block;
+                                            line-height: 70px;
+                                            padding: 0 50px;
+                                            font-size: 14px;
+                                            color: $Text_Color;
+                                            text-transform: capitalize;
+                                            font-weight: 400;
+                                            background-color: $Tagh4-Color;
+                                        }
+                                        &:hover{
+                                            .location{
+                                                background-color:  $Tagh4-Color;
+                                            }
+                                            .destination{
+                                                background-color: $Secondary-Color;
+                                            }
+                                        }
+                                    }
+                                    .add_more{
+                                        a{
+                                            background-color: $Area-Background-Color;
+                                            padding: 0 30px;
+                                            font-size: 24px;
+                                            height: 70px;
+                                            display: inline-block;
+                                            line-height: 70px;
+                                            text-transform: uppercase;
+                                            font-weight: 800;
+                                            color: $Text_Color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    // Dorne Features Destinations Area
+        #dorne_features_destinations_area{
+            width: 100%;
+            padding: 100px 35px;
+            position: relative;    
+            .container_fluid{
+                .dorne_features_destinations_area{
+                    .dorne_features_destination_area_content{
+                        width: 100%;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        .dorne_features_destinations_area_text{
+                            margin-bottom: 100px;
+                            text-align: center;
+                            span{
+                                width: 30px;
+                                height: 2px;
+                                background-color: $Primary;
+                                margin: 0 auto 15px;
+                                display: block;
+                            }
+                            h3{
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: 800;
+                                line-height: 1;
+                                font-size: 24px;
+                                margin-bottom: 15px;
+                                text-transform: uppercase;
+                                color: $Tagh4-Color;
+                            }
+                            p{
+                                font-family: 'Open Sans', sans-serif;
+                                color: $Tagp-Color;
+                                line-height: 1;
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+    
+                        }
+                    }
+                    .swiper{
+                        width: 100%;
+                        .swiper-wrapper{ 
+                            .destination_card{
+                                position: relative;
+                                padding-right: 15px;
+                                padding-left: 15px;
+                                .single_features_area{
+                                    transition: 0.7s;
+                                    width: 100%;
+                                    background-color: $Card-Background-Color;
+                                    .features_area_image{
+                                        width: 100%;
+                                        height: auto;
+                                        overflow: hidden;
+                                        img{
+                                            width: 100%;
+                                            height: auto;
+                                            vertical-align: middle;
+                                            @include image_hover;
+                                        }
+                                    }
+                                    .price_start{
+                                        p{
+                                            top: 20px;
+                                            left: 20px;
+                                            background-color: $Primary;
+                                            height: 35px;
+                                            font-size: 12px;
+                                            line-height: 35px;
+                                            margin-bottom: 0;
+                                            padding: 0 15px;
+                                            font-weight: 600;
+                                            color: $Text_Color;
+                                            z-index: 1;
+                                            position: absolute;
+                                            display: flex;
+                                        }
+                                    }
+                                    .feature_content{
+                                        width: 100%;
+                                        @include display(space-between,center);                         
+                                        padding: 40px 30px;
+                                        transition-duration: 500ms;
+                                        .feature_title{
+                                            max-width: 80%;
+                                            .event_name{
+                                                font-size: 15px;
+                                                font-weight: 800;
+                                                text-transform: uppercase;
+                                                margin-bottom: 0;
+                                                transition-duration: 500ms;
+                                                color: $Tagh4-Color;
+                                                line-height: 1.3;
+                                            }
+                                            .event_reason{
+                                                font-size: 13px;
+                                                margin-bottom: 0;
+                                                transition-duration: 500ms;
+                                                color: $Tagp-Color;
+                                                line-height: 1.5;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        .feature_favourite{
+                                            a{
+                                                color: $Primary;
+                                                font-size: 24px;
+                                                transition-duration: 500ms;
+                                                outline: none;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                    &:hover{
+                                        .feature_content{
+                                            background-color: $Primary;
+                                            box-shadow: 3px 15px 30px rgb(170, 163, 163);
+                                            .feature_title{
+                                                h4{
+                                                    color: $Text_Color;
+                                                }
+                                                p{
+                                                    color: $Text_Color;
+                                                }
+                                            }
+                                            .feature_favourite{
+                                                a{
+                                                    color: $Text_Color;
+        
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+
+    //Dorne Featured Restuarant Area
+        #dorne_features_restaurant_area{
+            padding: 100px 35px;
+            position: relative;
+            background-color: $Secondary-Color;
+            font-family: 'Open Sans',sans-serif;
+            .container{
+                padding: 0;
+                .dorne_features_restaurant_area{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    .dorne_features_restaurant_area_content{
+                        width: 100%;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        .dorne_features_restaurant_area_text{
+                            max-width: 100%;
+                            margin-bottom: 100px;
+                            text-align: center;
+                            span{
+                                width: 30px;
+                                height: 2px;
+                                background-color: #fff;
+                                margin: 0 auto 15px;
+                                display: block;
+                            }
+                            h3{
+                                font-weight: 800;
+                                line-height: 1;
+                                color: $Text_Color;
+                                margin-bottom: 15px;
+                                text-transform: uppercase;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 24px;
+                            }
+                            p{
+                                line-height: 1;
+                                color: $Text_Color;
+                                margin-bottom: 0;
+                                font-size:14px;
+                                font-weight: 400;
+                                font-family: 'Open Sans', sans-serif;
+
+                            }
+                        }
+                    }
+                    .swiper{
+                        width: 100%;
+                        .swiper-wrapper{
+                            .destination_restuarant_card{
+                                position: relative;;
+                                padding-right: 15px;
+                                padding-left: 15px;
+                                .single_features_restaurant_area{
+                                    transition: 0.7s;
+                                    width: 100%;
+                                    background-color: $Card-Background-Color;
+                                    .features_restuarant_image{
+                                        width: 100%;
+                                        height: auto;
+                                        overflow: hidden;
+                                        img{
+                                            width: 100%;
+                                            height: auto;
+                                            vertical-align: middle;
+                                            @include image_hover;
+                                        }
+                                    }
+                                    .ratings_map_area{
+                                        position: absolute;
+                                        top: 20px;
+                                        left: 20px;
+                                        display: flex;   
+                                        .score{
+                                            padding: 0 30px;
+                                            font-size: 16px;
+                                            font-weight: 800;
+                                            color: $Text_Color;
+                                            height: 70px;
+                                            line-height: 70px;
+                                            background-color: $Primary;
+                                            transition-duration: 500ms;                                           
+                                        }    
+                                        .map{
+                                            padding: 0 30px;
+                                            font-size: 16px;
+                                            font-weight: 800;
+                                            color: $Text_Color;
+                                            height: 70px;
+                                            line-height: 70px;
+                                            background-color: $Tagh4-Color;
+                                            transition-duration: 500ms;
+                                            @include display(center,center);
+                                        }                                 
+                                    }
+                                    .feature_restaurant_content{
+                                        padding: 40px 30px;
+                                        @include display(space-between,center);      
+                                        .feature_restaurant_title{
+                                            h5{
+                                                font-size: 15px;
+                                                font-weight: 800;
+                                                text-transform: uppercase;
+                                                transition-duration: 500ms;
+                                                font-family: 'Open Sans',sans-serif;
+                                                color: $Tagh4-Color;
+                                                line-height: 1.3;
+                                            }
+                                            p{
+                                                color: $Tagp-Color;
+                                                font-size: 14px;
+                                                line-height: 1.5;
+                                                font-weight: 400;
+                                                transition-duration: 500ms;                                               
+                                            }
+                                        }     
+                                        .feature_restuarant_favourite{
+                                            a{
+                                                color: $Primary;
+                                                font-size: 24px;
+                                                transition-duration: 500ms;
+                                                font-weight: 600;
+                                            }
+                                        }                           
+                                    }
+                                    &:hover{
+                                        background-color: $Primary;
+                                        .ratings_map_area{
+                                            .map{
+                                                background-color: $Area-Background-Color;
+                                            }
+                                        }
+                                        .feature_restaurant_content{
+                                            .feature_restaurant_title{
+                                                h5{
+                                                    color: $Text_Color;
+                                                }
+                                                p{
+                                                    color: $Text_Color;
+                                                }
+                                            }
+                                            .feature_restuarant_favourite{
+                                                a{
+                                                
+                                                        color: $Text_Color;
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    
+    // Dorne Feturent Events Area
+       #dorne_features_events_area{
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            background-image: url("./Assets/Images/Background/EventsArea.png");
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(14, 2, 35, 0.9);
+                z-index: -1;
+            }
+            .container{
+                padding: 0 100px;
+                .dorne_features_events_area{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    .dorne_features_events_area_content{
+                        width: 100%;
+                        min-height: 1px;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        .dorne_features_events_area_text{
+                            max-width: 100%;
+                            margin-bottom: 100px;
+                            text-align: center;
+                            span{
+                                width: 30px;
+                                height: 2px;
+                                background-color: #fff;
+                                margin: 0 auto 15px;
+                                display: block;
+                            }
+                            h3{
+                                font-weight: 800;
+                                line-height: 1;
+                                color: $Text_Color;
+                                margin-bottom: 15px;
+                                text-transform: uppercase;
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 24px;
+                            }
+                            p{
+                                line-height: 1;
+                                color: $Text_Color;
+                                margin-bottom: 0;
+                                font-size:14px;
+                                font-weight: 400;
+                                font-family: 'Open Sans', sans-serif;
+
+                            }
+                        }
+                    }
+                    .features_events_area_card_wrapper{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        margin-right: -15px;
+                        margin-left: -15px;
+                        .features_events_area_card{
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            min-height: 1px;
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            .single_feature_events_area{
+                                position: relative;
+                                background-color: $Text_Color;
+                                margin-bottom: 50px;
+                                transition-duration: 500ms;
+                                display: flex;
+                                align-items: center;
+                                visibility: visible;
+                                animation-delay: 0.2s;
+                                animation-name: fadeInUpBig;
+                                transition: 1s;
+                                &.animated {
+                                    animation-duration: 2s;
+                                    animation-fill-mode: both;
+                                }
+                                &.fadeInUpBig{
+
+                                    animation-name: fadeInUp;
+                                }
+
+                                @keyframes fadeInUp {
+                                    0% {
+                                        opacity: 0;
+                                        transform: translateY(20000px);
+                                    }
+                                
+                                    100% {
+                                        opacity: 10;
+                                        transform: translateY(0);
+                                    }
+                                }
+                                &:hover{
+                                    background-color: $Primary;
+                                    .feature_events_content{
+                                        h5{
+                                            color: $Text_Color;
+                                        }
+                                        h6{
+                                            color: $Text_Color;
+                                        }
+                                        p{
+                                            color: $Text_Color;
+
+                                        }
+                                    }
+                                    .feature_events_details_btn{
+                                        a{
+
+                                            background-color: $Area-Background-Color
+                                        }
+                                    }
+                                }
+                                .feature_events_thumb{
+                                    position: relative;
+                                    width: 170px;
+                                    flex: 0 0 170px;
+                                    .featured_events_image{
+                                        position: relative;
+                                        img{
+                                            max-width: 100%;
+                                            height: auto;
+                                            vertical-align: middle;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .date_map_area{
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        display: flex;
+                                        .date{
+                                            padding: 8px 15px;
+                                            font-size: 12px;
+                                            width: 65px;
+                                            font-weight: 800;
+                                            color: $Text_Color;
+                                            height: 50px;
+                                            background-color: $Primary;
+                                            text-align: center;
+                                        }
+                                        .map{
+                                            padding: 8px 15px;
+                                            font-size: 12px;
+                                            width: 65px;
+                                            font-weight: 800;
+                                            color: $Text_Color;
+                                            height: 50px;
+                                            background-color: $Area-Background-Color;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                                .feature_events_content{
+                                    position: relative;
+                                    padding: 0 15% 0 15px;
+                                    width: 100%;
+                                    h5{
+                                        font-size: 18px;
+                                        text-transform: uppercase;
+                                        font-weight: 800;
+                                        margin-bottom: 5px;
+                                        transition-duration: 500ms;
+                                        font-family: 'Open Sans', sans-serif;
+                                        color: $Tagh4-Color;
+                                        line-height: 1.3;
+                                    }
+                                    h6{
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: #bfb1de;
+                                        margin-bottom: 15px;
+                                        transition-duration: 500ms;
+                                        font-family: 'Open Sans', sans-serif;
+                                        line-height: 1.3;
+                                    }
+                                    p{
+                                        color: $Tagp-Color;
+                                        font-size: 14px;
+                                        line-height: 1.5;
+                                        font-weight: 400;
+                                        transition-duration: 500ms;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;  
+                                        overflow: hidden;
+                                    }
+                                }
+                                .feature_events_details_btn{
+                                    a{
+                                        width: 65px;
+                                        height: 50px;
+                                        background-color: $Tagh4-Color;
+                                        display: block;
+                                        font-size: 24px;
+                                        color: $Text_Color;
+                                        line-height: 50px;
+                                        text-align: center;
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    // Dorne Client Area Section
+        #dorne_client_area{
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            .contaier_fluid{
+                .dorne_client_area{
+                    max-width: 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    @include display(space-around,center);
+                    flex-wrap: wrap;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    .sclient_area_picture{
+                        height: auto;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            vertical-align: middle;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Responsive 992-1119
+@media (min-width: 992px) and (max-width: 1199px){
+    // Welcome Area
+    #dorne_welcome_area{
+        .container_fluid{
+            .dorne_welcome_area{
+                .hero_welcome_area{
+                    .hero_content{
+                        h1{
+                            font-size: 42px!important;
+                        }
+                    }
+                    .hero_search_form{
+                        .table_content{
+                            .table_page{
+                                form{
+                                    .custom_select{
+                                        padding: 0 50px 0 20px!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .hero_social_btn{
+            margin-bottom: 130px;
+        }
+    }
+    // Ctagory Area
+    #dorne_catagory_area{
+        .container{
+            @include container;
+            .dorne_catagory_area{
+                .all_catagories{
+                    padding: 30px 0;
+                    .catagory_column{
+                        flex-grow: 1;
+                        max-width: 100%;
+                        flex: 0 0 20%!important;
+                        .single_catagory_area{
+                            padding: 40px 15px!important;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    // Pick Area
+    #dorne_editors_pick_area{
+        .container{
+            padding: 0 50px!important;
+        }
+    }
+    #dorne_features_events_area{
+        .container{
+            padding: 0 50px!important;
+        }
+    }
+}
+// Responsive 768-991
+@media (min-width: 768px) and (max-width: 991px){
+    // Welcome Area
+    #dorne_welcome_area{
+        .container_fluid{
+            padding: 0 50px!important;
+            .dorne_welcome_area{
+                .hero_welcome_area{
+                    .hero_content{
+                        h1{
+                            font-size: 42px!important;
+                        }
+                    }
+                    .hero_search_form{
+                        .table_content{
+                            .table_page{
+                                form{
+                                    .custom_select{
+                                        padding: 0 18px!important;
+                                        margin-right: 5px!important;
+                                        font-size: 11px!important;
+                                        background: #fff url(./Assets/Icon/Select.svg) no-repeat right 4px center!important;
+                                    
+                                        }
+                                    .sumbit_btn{
+                                        min-width: 120px!important;
+                                        padding: 0 10px!important;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hero_social_btn{
+            bottom: 140px;
+            left: 30px;
+        }
+
+    }
+    // Catagory Area
+    #dorne_catagory_area{
+        .container{
+            @include container;
+            .dorne_catagory_area{
+                .all_catagories{
+                    top: 0%!important;
+                    transform: translateY(0%)!important;
+                    padding: 30px 0;
+                    .catagory_column{
+                        flex-grow: 1;
+                        max-width: 100%;
+                        flex: 0 0 50%!important;
+                        &:nth-last-child(1){
+                            flex: 0 0 100%!important;
+                        }
+                        .single_catagory_area{
+                            padding: 40px 15px!important;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    // About Area
+    #dorne_about_area{
+        .container{
+            @include container;
+            .dorne_about_area{
+                .about_content{
+                    h2{
+                        font-size: 36px!important;
+                    }
+                }
+            }
+        }
+    }
+    // Pick Area
+    #dorne_editors_pick_area{
+        .container{
+            .dorne_editors_pick_area{
+                .pick_area_card_wrapper{
+                    .pick_area_card{
+                        flex: 0 0 100%!important;
+                        max-width: 100%!important;
+                    }
+                }
+            }
+        }
+    }
+    #dorne_features_events_area{
+        .container{
+            padding: 0 100px!important;
+            .dorne_features_events_area{
+                .features_events_area_card_wrapper{
+                    .features_events_area_card{
+                        flex: 0 0 100%!important;
+                        max-width: 100%!important;
+                        .single_feature_events_area{
+                            .feature_events_thumb{
+                                width: 179px!important;
+                                flex: 0 0 179px!important;
+                            }
+                            .feature_events_content{
+                                padding: 30px 15% 30px 20px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Client Area
+    #dorne_client_area{
+        .contaier_fluid{
+            .sclient_area_picture{
+                padding: 0 15px;
+            }
+        }
+    }
+}
+// Responsive 576-766
+@media (min-width: 576px) and (max-width: 766px){
+    #dorne_features_events_area{
+        .container{
+            padding: 0 30px!important;
+            .dorne_features_events_area{
+                .features_events_area_card_wrapper{
+                    .features_events_area_card{
+                        flex: 0 0 100%!important;
+                        max-width: 100%!important;
+                        .single_feature_events_area{
+                            .feature_events_thumb{
+                                width: 180px!important;
+                                flex: 0 0 180px!important;
+                            }
+                            .feature_events_content{
+                                padding: 30px 15% 30px 20px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Responsive 320-767
+@media (min-width: 320px) and (max-width: 767px){
+    // Welcome Area
+    #dorne_welcome_area{
+        .container_fluid{
+            padding: 0px!important;
+            .dorne_welcome_area{
+                .hero_welcome_area{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    .hero_content{
+                        h1{
+                            font-size: 28px!important;
+                        }
+                        h3{
+                            padding-left: 0!important;
+                            font-size: 15px!important;
+                        }
+                    }
+                    .hero_search_form{
+                        .table_content{
+                            .table_page{
+                                form{
+                                    flex-direction: column;
+                                    .custom_select{
+                                        padding: 0 50px 0 20px!important;
+                                        margin-bottom: 5px!important;
+                                        width: 100%!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hero_social_btn{
+            display: none;
+        }
+    }
+    // Category Area
+    #dorne_catagory_area{
+        .container{
+            @include container;
+            .dorne_catagory_area{
+                .all_catagories{
+                    top: 0%!important;
+                    transform: translateY(0%)!important;
+                    padding: 30px 0;
+                    .catagory_column{
+                        flex-grow: 1;
+                        max-width: 100%;
+                        flex: 0 0 100%!important;
+                        .single_catagory_area{
+                            padding: 40px 15px!important;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    // About Area
+    #dorne_about_area{
+        .container{
+            @include container;
+            .dorne_about_area{
+                .about_content{
+                    h2{
+                        font-size: 30px!important;
+                        margin-bottom: 30px!important;
+                    }
+                }
+            }
+        }
+    }
+    // Pick Area
+    #dorne_editors_pick_area{
+        .container{
+            @include container;
+            .dorne_editors_pick_area{
+                .pick_area_card_wrapper{
+                    .pick_area_card{
+                        flex: 0 0 100%!important;
+                        max-width: 100%!important;
+                        .single_editors_pick_area{
+                            .editors_pick_info{
+                                a{
+                                    height: 50px!important;
+                                    line-height: 50px!important;
+                                    padding: 0 15px!important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Client Area
+    #dorne_client_area{
+        .contaier_fluid{
+            .sclient_area_picture{
+                padding: 30px;
+            }
+        }
+    }
+}
+// Responsive 320-575
+@media (min-width: 320px) and (max-width: 575px){
+    #dorne_features_events_area{
+        .container{
+            padding: 0 30px!important;
+            .dorne_features_events_area{
+                .features_events_area_card_wrapper{
+                    .features_events_area_card{
+                        flex: 0 0 100%!important;
+                        max-width: 100%!important;
+                        .single_feature_events_area{
+                            flex-direction: column!important;
+                            .feature_events_thumb{
+                                width: 100%!important;
+                                flex: 0 0 100%!important;
+                            }
+                            .feature_events_content{
+                                padding: 30px 15% 50px 20px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

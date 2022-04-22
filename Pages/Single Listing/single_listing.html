@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title-->
+    <title>Dorne - Directory & Listing Template | Single Listings</title>
+     <!-- Favicon -->
+     <link rel="icon" href="../../Assets/Images/Logo/favicon.ico">   
+    <!-- Main Style -->
+    <link rel="stylesheet" href="single_listing.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!-- Start Header-->
+    <header id="header">
+        <!-- Registr Form-->
+        <div class="registr" id="registr">  	
+            <div class="registr_close_btn" id="registrCloseBtn">
+                <i class="far fa-times-circle"></i>                
+            </div>
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="registrname" id="registrname" placeholder="User name" required="registrname">
+                        <input type="email" name="registremail" id="registremail" placeholder="Email" required="registremail">
+                        <input type="password" name="registrpswd" id="registrpswd" placeholder="Password" required="registrpswd">
+                        <button id="registrsumbit">Sign up</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+        </div>
+        <!-- Start Open Search Button-->
+        <div id="dorne_search_form" class="search">
+            <div class="container">
+                <div class="dorne_search_form">
+                    <div class="search_close_btn" id="closeBtn">
+                        <i class="far fa-times-circle"></i>                
+                    </div>
+                    <form action="#">
+                        <input type="search" name="caviarSearch" id="search" placeholder="Search Your Desire Destinations or Events">
+                        <input type="submit" class="none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Open Search Button-->
+        
+        <!-- Start Container Header -->
+        <div class="container_header">
+        <!-- Start Header -->           
+            <div class="header">
+            <!-- Start Navigation Bar -->
+                <div class="navigation_bar">
+                    <!-- Add logo-->
+                    <figure class="logo">
+                        <a href="../../index.html">                           
+                            <img src="../../Assets/Images/Logo/logo.png" alt="Dorne - Directory & Listing Template">
+                        </a> 
+                    </figure>
+                    <!-- Start Navbar-->
+                    <div class="navbar" id="dorneNav">
+                        <!-- Start Navbar-->
+                        <nav class="nav">
+                            <!-- Start Navar List-->
+                            <ul class="navbar_list" id="dorneMenu">
+                                <li class="navbar_list__item" >
+                                    <a class="navbar_list__item___link "  href="../../index.html">Home</a>
+                                </li>
+                                <li class="navbar_list__item dropdown" >
+                                    <a class="navbar_list__item___link dropdown"  id="dropdown" role="button" >Explore <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <div class="dropdown_menu" id="navbar_dropdown">
+                                            <a class="dropdown_item" href="../../index.html">Home</a>
+                                            <a class="dropdown_item" href="../Explore/explore.html">Explore</a>
+                                            <a class="dropdown_item" href="../Listings/listings.html">Listing</a>
+                                            <a class="dropdown_item" href="single_listing.html">Single Listing</a>
+                                            <a class="dropdown_item" href="../Contact/contact.html">Contact</a>
+                                        </div>
+                                </li>
+                                <li class="navbar_list__item dropdown">
+                                    <a class="active navbar_list__item___link dropdown"  id="dropdown2" role="button" >Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <div class="dropdown_menu" id="navbar_dropdown2">
+                                            <a class="dropdown_item" href="../../index.html">Home</a>
+                                            <a class="dropdown_item" href="../Explore/explore.html">Explore</a>
+                                            <a class="dropdown_item" href="../Listings/listings.html">Listing</a>
+                                            <a class="dropdown_item" href="single_listing.html">Single Listing</a>
+                                            <a class="dropdown_item" href="../Contact/contact.html">Contact</a>
+                                        </div>
+                                </li>
+                                <li class="navbar_list__item">
+                                    <a class="  navbar_list__item___link " href="../Contact/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- End Navar List-->   
+                        </nav>
+                        <!-- End Navbar-->
+                        <!-- Start Nabar Right-->
+                        <div class="navbar_right">
+                            <!-- Start Search Button-->
+                            <div class="dorne_search_btn" id="dorne_search_btn">
+                                <a id="search_btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                            </div>
+                            <!-- End Search Button-->
+                            <!-- Start Register-->
+                            <div class="dorne_signin_btn" id="dorne_signin_btn">
+                                <a href="#" >Sign in or Register</a>
+                            </div>
+                            <!-- End Register-->
+                        </div>
+                        <!-- Start Nabar Right-->
+
+                    </div>
+                        <!-- Top Navigation Menu -->
+                        <div class="topnav">
+                            <a href="javascript:void(0);" class="icon" id="icon">
+                            <i class="fa fa-bars"></i>
+                            </a>
+                            <div id="myLinks" class="nav_link">
+                                <a href="../../index.html">Home</a>
+                                <a href="../Explore/explore.html">Explore</a>
+                                <a href="../Listings/listings.html" class="active" >Listings</a>
+                                <a href="single_listing.html">Single Listing</a>
+                                <a href="../Contact/contact.html"  >Contact</a>  
+                                <div class="dorne_search_btn" id="search__btn">
+                                    <a id="search_btn"  style="cursor: pointer;" ><i style="margin-right: 5px;" class="fa fa-search" aria-hidden="true"></i> Search</a>                 
+                                </div>    
+                                <div class=dorne_signin_btn"" id="signin_btn">
+                                    <a id="signin_btn"  style="cursor: pointer;" >Sign in or Register</a>
+                                </div> 
+                            </div>
+                        </div>                
+                </div>
+            <!-- End Navigation Bar -->          
+            </div>
+        <!-- End Header -->           
+        </div>
+        <!-- End Container Header -->        
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Main-->
+    <main>
+        <!-- Start Introduction-->
+        <section id="introduction">
+            <div class="container">
+                <div class="single_introduction">
+                    <div class="map_ratings_review_area ">
+                        <a href="#" class="raiting"><img src="../../Assets/Images/Single Listing/Raiting Rewiev/Rating.png "></a>
+                        <a href="#" class="point_score">8.7</a>
+                        <a href="#" class="rewiev">Write a review</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Introduction-->
+
+        <!-- Start Single Listing Area-->
+        <section id="dorne_single_listing_area">
+            <div class="container">
+                <div class="dorne_single_listing_area">
+                    <!-- Start Listing Content -->
+                    <div class="single_listing_content">
+                        <!-- Start Title-->
+                        <div class="listing_title">
+                            <h3>Burger House soho</h3>
+                            <h5>First Avenue no 83</h5>
+                        </div>
+                        <!-- End Title-->
+                        <!-- Start Tab Page-->
+                        <div class="single_listing_nav">
+                            <nav>
+                                <ul id="listing_nav_list">
+                                    <li class="listing_nav_list_item onclick="tabPage('overview')""><a href="#overview" class=" active listing_nav_list_item_link">Overview</a></li>
+                                    <li class="listing_nav_list_item" onclick="tabPage('menu')"><a href="#menu" class="listing_nav_list_item_link">Menu</a></li>
+                                    <li class="listing_nav_list_item" onclick="tabPage('review')"><a href="#review" class="listing_nav_list_item_link">Reviews</a></li>
+                                    <li class="listing_nav_list_item" onclick="tabPage('lomap')"><a href="#lomap" class="listing_nav_list_item_link">Location on map</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- End Tab Page-->
+                        <!--  Start Overview Content-->
+                        <div class="overview-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta lorem blandit aliquam eget quis ipsum. Vivamus accumsan consequat ligula non volutpat. Sed mollis orci non cursus vestibulum. Pellentesque vitae est a augue laoreet venenatis sed eu felis. Sed cursus magna nec turpis ullamcorper, eget rutrum felis egestas. Nunc odio ex, fermentum efficitur nunc vitae, efficitur hendrerit diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta lorem blandit aliquam eget quis ipsum.</p>
+                            <!-- Start Check Boxes-->
+                            <div class="check_boxes">
+                                <div class="check_box" id="credits">
+                                    <label class="custom_control custom_checkbox ">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="credits_control" ></span>
+                                        <span class="custom_control_description">Accepts Credit Cards</span>
+                                    </label>
+                                </div>
+                                <div class="check_box" id="parking">
+                                    <label class="custom_control custom_checkbox">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="parking_control"></span>
+                                        <span class="custom_control_description">Bike Parking</span>
+                                    </label>
+                                </div>
+                                <div class="check_box" id="internet">
+                                    <label class="custom_control custom_checkbox">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="internet_control"></span>
+                                        <span class="custom_control_description">Wireless Internet</span>
+                                    </label>
+                                </div>
+                                <div class="check_box" id="reservation">
+                                    <label class="custom_control custom_checkbox ">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="reservation_control"></span>
+                                        <span class="custom_control_description">Reservations</span>
+                                    </label>
+                                </div>
+                                <div class="check_box" id="private">
+                                    <label class="custom_control custom_checkbox ">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="private_control"></span>
+                                        <span class="custom_control_description">Privat Parking</span>
+                                    </label>
+                                </div>
+                                <div class="check_box" id="smoking">
+                                    <label class="custom_control custom_checkbox">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="smoking_control"></span>
+                                        <span class="custom_control_description">Smoking Area</span>
+                                    </label>
+                                </div>
+                                <div class="check_box" id="whellchair">
+                                    <label class="custom_control custom_checkbox ">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="whellchair_control"></span>
+                                        <span class="custom_control_description">Wheelchair Accesible</span>
+                                    </label>
+                                </div>
+                                <div class="check_box" id="coupons">
+                                    <label class="custom_control custom_checkbox ">
+                                        <input type="checkbox" class="custom_control_input">
+                                        <span class="custom_control_indicator" id="coupons_control"></span>
+                                        <span class="custom_control_description">Coupons</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- End Check Boxes-->
+                        </div>
+                        <!-- End Overview Content-->
+                        <!-- Start Listing Menu-->
+                        <div class="listing_menu_area" id="menu">
+                            <h3>Menu</h3>
+                            <!-- Start Listing Menu Card-->
+                            <div class="single_listing_menu">                     
+                                <div class="listing_menu_title">
+                                    <h6>Classic Burger</h6>
+                                    <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                </div>                               
+                                <div class="listing_menu_price">
+                                    <h6>$9,90</h6>
+                                </div>
+                            </div>
+                            <!-- End Listing Menu Card-->
+                            <!-- Start Listing Menu Card-->
+                            <div class="single_listing_menu">                            
+                                <div class="listing_menu_title">
+                                    <h6>House Special Burger</h6>
+                                    <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                </div>                            
+                                <div class="listing_menu_price">
+                                    <h6>$9,90</h6>
+                                </div>
+                            </div>       
+                            <!-- End Listing Menu Card-->
+                            <!-- Start Listing Menu Card-->      
+                            <div class="single_listing_menu">
+                                
+                                <div class="listing_menu_title">
+                                    <h6>Classic Burger</h6>
+                                    <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                </div> 
+                                <div class="listing_menu_price">
+                                    <h6>$9,90</h6>
+                                </div>
+                            </div>
+                            <!-- End Listing Menu Card-->
+                            <!-- Start Listing Menu Card-->
+                            <div class="single_listing_menu">                         
+                                <div class="listing_menu_title">
+                                    <h6>House Special Burger</h6>
+                                    <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                </div>  
+                                <div class="listing_menu_price">
+                                    <h6>$9,90</h6>
+                                </div>
+                            </div>
+                            <!-- End Listing Menu Card-->
+                            <!-- Listing Menu Button-->
+                            <a href="#" class="single_btn">+ See The Menu</a>
+                            </div>
+                        <!-- End Listing Menu-->  
+                        <!-- Start Listing Review-->
+                        <div class="listing_reviews_area " id="review">
+                            <h3>reviews</h3>
+                            <!-- Start Rewiev Area-->
+                            <div class="single_review_area">
+                                <div class="reviewer_meta ">
+                                        <div class="review_image">
+                                            <img src="../../Assets/Images/Single Listing/Review.png" >
+                                        </div>
+                                        <div class="reviewer_content">
+                                            <div class="review_title_ratings ">
+                                                <h5>“The best Burger in town”</h5>
+                                            <div class="ratings">
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                            </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta lorem blandit aliquam eget quis ipsum. Vivamus accumsan consequat ligula non volutpat.</p>
+                                        </div>
+                                </div>
+                                <div class="reviewer_name">
+                                    <h6>Christinne Smith</h6>
+                                    <p>12 November 2017</p>
+                                </div>
+                            </div>
+                            <!-- End Rewiev Area-->
+                            <!-- Start Rewiev Area-->               
+                            <div class="single_review_area">
+                                <div class="reviewer_meta ">
+                                    <div class="review_image">
+                                        <img src="../../Assets/Images/Single Listing/Review.png" >
+                                    </div>
+                                    <div class="reviewer_content">
+                                        <div class="review_title_ratings ">
+                                            <h5>“Quality ingredients”</h5>
+                                            <div class="ratings">
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/Star.png" >
+                                                <img src="../../Assets/Images/Single Listing/Raiting Rewiev/StarUnfill.png" >
+                                            </div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta lorem blandit aliquam eget quis ipsum. Vivamus accumsan consequat ligula non volutpat.</p>
+                                    </div>
+                                </div>
+                                <div class="reviewer_name">
+                                    <h6>Michael Brown</h6>
+                                    <p>12 November 2017</p>
+                                </div>
+                            </div>
+                            <!-- End Rewiev Area-->
+                           
+                        </div>
+                        <!-- End Listing Review-->
+                        <!-- Start Dorne Map Area-->                                   
+                        <div class="location_on_map" id="lomap">
+                            <h3>Location on map</h3>
+                            <div class="dorne_map_area">
+                                <div class="iframe_map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596117285!2d-74.25986732363226!3d40.697149414875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2s!4v1648813871529!5m2!1str!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                            </div>
+                        </div> 
+                        <!-- End Dorne Map Area-->                                 
+                    </div>
+                    <!-- End Listing Content -->
+            
+                    <!-- Start Listing Right Bar-->
+                    <div class="listing_sidebar">
+                        <!-- Start Verify-->
+                        <div class="listing_verify">
+                            <a href="#" class="verify_btn"><i class="fa fa-check pr-3"></i> Verified Listing</a>
+                        </div>                  
+                        <!-- End Verify-->
+                        <!-- Start Book Table-->
+                        <div class="book_table ">
+                            <h6>Book A Table</h6>
+                            <form action="#">
+                                <select class="custom_select" id="destinations">
+                                    <option selected="">Who will be arriving</option>
+                                    <option value="1">New York</option>
+                                    <option value="2">Latvia</option>
+                                    <option value="3">Dhaka</option>
+                                    <option value="4">Melbourne</option>
+                                    <option value="5">London</option>
+                                </select>
+                                <select class="custom_select" id="catagories">
+                                    <option selected="">Guest 1</option>
+                                    <option value="1">Guest 2</option>
+                                    <option value="3">Guest 3</option>
+                                    <option value="3">Guest 4</option>
+                                </select>
+                                <button type="submit" class="book_table_btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                            </form>
+                        </div>
+                        <!-- End Book Table-->
+                        <!-- Start Opening Hours-->
+                        <div class="opening_hours">
+                            <h6>Opening Hours</h6>
+                            <ul class="opening_hours_list">
+                                <li class="opening_hours_item">
+                                    <p>Monday</p>
+                                    <p>Closed</p>
+                                </li>
+                                <li class="opening_hours_item">
+                                    <p>Tuesday</p>
+                                    <p>9 AM - 1 PM</p>
+                                </li>
+                                <li class="opening_hours_item">
+                                    <p>Wednesday</p>
+                                    <p>9 AM - 1 PM</p>
+                                </li>
+                                <li class="opening_hours_item">
+                                    <p>Thursday</p>
+                                    <p>9 AM - 1 PM</p>
+                                </li>
+                                <li class="opening_hours_item">
+                                    <p>Friday</p>
+                                    <p>9 AM - 1 PM</p>
+                                </li>
+                                <li class="opening_hours_item">
+                                    <p>Saturday</p>
+                                    <p>9 AM - 1 PM</p>
+                                </li>
+                                <li class="opening_hours_item">
+                                    <p>Sunday</p>
+                                    <p>9 AM - 1 PM</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Opening Hours-->
+                        <!-- Start Author-->
+                        <div class="author">
+                            <div class="author_image">
+                                <img src="../../Assets/Images/Single Listing/Review.png" >
+                            </div>
+                            <div class="authors_name">
+                                <a href="#">James Smith</a>
+                                <p>The Author</p>
+                            </div>
+                        </div>
+                        <!-- End Author-->
+                        <!-- Start Listing Contact-->
+                        <div class="listing_contact">
+                            <h6>Contact Business</h6>
+                            <form action="#">
+                            <div class="contact_form">
+                                <div class="contant_item">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" id="singlename">
+                                </div>
+                                <div class="contant_item">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" id="singleemail">
+                                </div>
+                                <div class="contant_item">
+                                    <textarea name="message" class="form-control" id="singlemessage" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="contant_item">
+                                    <button type="submit" class="contact_btn" id="singlesubmit">Send</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Listing Right Bar-->
+                </div>
+            </div>
+        </section>
+        <!-- End Single Listing Area-->
+    </main>
+    <!-- End Main-->
+
+     <!-- Start Footer -->
+     <footer id="footer">
+        <!-- Start Container_Footer -->
+        <div class="container_footer">
+            <!-- Start All Footer -->
+            <div class="footer">
+                <!-- Start Footer Text -->
+                <div class="footer_text">
+                    <p>                
+                    Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>                
+                    </p>
+                </div>
+                <!-- End Footer Text -->
+                <!-- Start Footer Social  -->
+                <div class="footer_social__btns">
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+                    <a href="https://www.behance.net/"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+                    <a href="https://facebook.com/"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
+                </div>
+                <!-- End Footer Social  -->
+            </div>
+            <!-- End All Footer -->
+        </div>
+        <!-- End Container_Footer -->
+    </footer>
+   <!-- End Footer-->
+     <!-- Start Scroll Up-->
+     <div class="scroll_up" id="sroll_btn" onclick="topFunction()">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- End Scroll Up-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Fonrawesome Script-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+    src="https://kit.fontawesome.com/2950db5552.js"
+    crossorigin="anonymous"></script>
+   <!-- All Script-->
+   <script src="../../Assets/Js/all_page.js"></script>
+   <!-- Page Script-->
+   <script src="./Assets/Js/single_listing.js"></script>
+   </body>
+</html>

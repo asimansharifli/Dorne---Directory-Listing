@@ -1,0 +1,17 @@
+@mixin display($justify-content,$items-center){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $items-center;
+}
+@mixin container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include display(center, center);
+}
+@mixin image_hover {
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.09);
+    }
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorne - Directory & Listing Template</title>
+     <!-- Favicon -->
+     <link rel="icon" href="./Assets/Images/Logo/favicon.ico">   
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Start Header -->
+    <header id="header">
+        <!-- Registr Form-->
+        <div class="registr" id="registr">  	
+            <div class="registr_close_btn" id="registrCloseBtn">
+                <i class="far fa-times-circle"></i>                
+            </div>
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="registrname" id="registrname" placeholder="User name" required="registrname">
+                        <input type="email" name="registremail" id="registremail" placeholder="Email" required="registremail">
+                        <input type="password" name="registrpswd" id="registrpswd" placeholder="Password" required="registrpswd">
+                        <button id="registrsumbit">Sign up</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+        </div>
+        <!-- Start Open Search Button-->
+        <div id="dorne_search_form" class="search">
+            <div class="container">
+                <div class="dorne_search_form">
+                    <div class="search_close_btn" id="closeBtn">
+                        <i class="far fa-times-circle"></i>                
+                    </div>
+                    <form action="#">
+                        <input type="search" name="caviarSearch" id="search" placeholder="Search Your Desire Destinations or Events">
+                        <input type="submit" class="none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Open Search Button-->
+        
+        <!-- Start Container Header -->
+        <div class="container_header">
+        <!-- Start Header -->           
+            <div class="header">
+            <!-- Start Navigation Bar -->
+                <div class="navigation_bar">
+                    <!-- Add logo-->
+                    <figure class="logo">
+                        <a href="index.html">                           
+                            <img src="./Assets/Images/Logo/logo.png" alt="Dorne - Directory & Listing Template">
+                        </a> 
+                    </figure>
+                    <!-- Start Navbar-->
+                    <div class="navbar" id="dorneNav">
+                        <!-- Start Navbar-->
+                        <nav class="nav">
+                            <!-- Start Navar List-->
+                            <ul class="navbar_list" id="dorneMenu">
+                                <li class="navbar_list__item" >
+                                    <a class="navbar_list__item___link active " href="index.html">Home</a>
+                                </li>
+                                <li class="navbar_list__item dropdown" >
+                                    <a class="navbar_list__item___link dropdown"  id="dropdown" role="button" >Explore <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <div class="dropdown_menu" id="navbar_dropdown">
+                                            <a class="dropdown_item" href="index.html">Home</a>
+                                            <a class="dropdown_item" href="Pages/Explore/explore.html">Explore</a>
+                                            <a class="dropdown_item" href="Pages/Listings/listings.html">Listing</a>
+                                            <a class="dropdown_item" href="Pages/Single Listing/single_listing.html">Single Listing</a>
+                                            <a class="dropdown_item" href="Pages/Contact/contact.html">Contact</a>
+                                        </div>
+                                </li>
+                                <li class="navbar_list__item dropdown">
+                                    <a class="navbar_list__item___link dropdown"  id="dropdown2" role="button" >Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <div class="dropdown_menu" id="navbar_dropdown2">
+                                            <a class="dropdown_item" href="index.html">Home</a>
+                                            <a class="dropdown_item" href="Pages/Explore/explore.html">Explore</a>
+                                            <a class="dropdown_item" href="Pages/Listings/listings.html">Listing</a>
+                                            <a class="dropdown_item" href="Pages/Single Listing/single_listing.html">Single Listing</a>
+                                            <a class="dropdown_item" href="Pages/Contact/contact.html">Contact</a>
+                                        </div>
+                                </li>
+                                <li class="navbar_list__item">
+                                    <a class="navbar_list__item___link" href="Pages/Contact/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- End Navar List-->   
+                        </nav>
+                        <!-- End Navbar-->
+                        <!-- Start Nabar Right-->
+                        <div class="navbar_right">
+                            <!-- Start Search Button-->
+                            <div class="dorne_search_btn" id="dorne_search_btn">
+                                <a id="search_btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                            </div>
+                            <!-- End Search Button-->
+                            <!-- Start Register-->
+                            <div class="dorne_signin_btn" id="dorne_signin_btn">
+                                <a href="#" >Sign in or Register</a>
+                            </div>
+                            <!-- End Register-->
+                        </div>
+                        <!-- Start Nabar Right-->
+
+                    </div>
+                        <!-- Top Navigation Menu -->
+                        <div class="topnav">
+                            <a href="javascript:void(0);" class="icon" id="icon">
+                            <i class="fa fa-bars"></i>
+                            </a>
+                            <div id="myLinks" class="nav_link">
+                                <a href="index.html" class="active">Home</a>
+                                <a href="Pages/Explore/explore.html">Explore</a>
+                                <a href="Pages/Listings/listings.html" >Listings</a>
+                                <a href="Pages/Single Listing/single_listing.html">Single Listing</a>
+                                <a href="Pages/Contact/contact.html">Contact</a>  
+                                <div class="dorne_search_btn" id="search__btn">
+                                    <a id="search_btn"  style="cursor: pointer;" ><i style="margin-right: 5px;" class="fa fa-search" aria-hidden="true"></i> Search</a>                 
+                                </div>   
+                                <div class=dorne_signin_btn"" id="signin_btn">
+                                    <a id="signin_btn"  style="cursor: pointer;" >Sign in or Register</a>
+                                </div> 
+                            </div>
+                        </div>                
+                </div>
+            <!-- End Navigation Bar -->          
+            </div>
+        <!-- End Header -->           
+        </div>
+        <!-- End Container Header -->        
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Main -->
+    <main >
+        <!-- Start Dorne Welcome Area -->
+        <section id="dorne_welcome_area">
+            <!-- Start Welcome Area -->
+            <div class="container_fluid">
+                <div class="dorne_welcome_area">
+                    <div class="hero_welcome_area">
+                        <!-- Start Hero Contant-->
+                        <div class="hero_content">
+                            <h1>Discover places near you</h1>
+                            <h3>This is the best guide of your city</h3>
+                        </div>
+                        <!-- End hero Contant -->
+                        <!-- Start Search Form-->
+                        <div class="hero_search_form">
+                            <!-- Start Nav Table-->
+                            <div class="nav nav_table" id="hero_table" >
+                                <a class="nav_item nav_link active" id="nav_places_tab" href="#nav-places">Places</a>
+                                <a class="nav_item nav_link" id="nav_events_tab"  href="#nav-events" >Events</a>
+                            </div>
+                            <!-- End Nav Table-->
+                            <!-- Start Table-->
+                            <div class="table_content" id="nav_tabContent">
+                            <!-- Start Table Page-->                            
+                            <div class="table_page show active" id="nav_places" >
+                            <h6>What are you looking for?</h6>
+                            <form action="#">
+                            <select class="custom_select">
+                                <option selected="">Your Destinations</option>
+                                <option value="1">New York</option>
+                                <option value="2">Latvia</option>
+                                <option value="3">Dhaka</option>
+                                <option value="4">Melbourne</option>
+                                <option value="5">London</option>
+                            </select>
+                            <select class="custom_select">
+                                <option selected="">All Catagories</option>
+                                <option value="1">Catagories 1</option>
+                                <option value="2">Catagories 2</option>
+                                <option value="3">Catagories 3</option>
+                            </select>
+                            <select class="custom_select">
+                                <option selected="">Price Range</option>
+                                <option value="1">$100 - $499</option>
+                                <option value="2">$500 - $999</option>
+                                <option value="3">$1000 - $4999</option>
+                            </select>
+                            <button type="submit" class="sumbit_btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                            </form>
+                            </div>
+                            <!-- End Table Page-->
+                            <!-- Start Table Page-->
+                            <div class="table_page  fade" id="nav_events" >
+                                <h6>What are you looking for?</h6>
+                                <form action="#">
+                                    <select class="custom_select">
+                                        <option selected="">Your Destinations</option>
+                                        <option value="1">New York</option>
+                                        <option value="2">Latvia</option>
+                                        <option value="3">Dhaka</option>
+                                        <option value="4">Melbourne</option>
+                                        <option value="5">London</option>
+                                    </select>
+                                    <select class="custom_select">
+                                        <option selected="">All Catagories</option>
+                                        <option value="1">Catagories 1</option>
+                                        <option value="2">Catagories 2</option>
+                                        <option value="3">Catagories 3</option>
+                                    </select>
+                                    <select class="custom_select">
+                                        <option selected="">Price Range</option>
+                                        <option value="1">$100 - $499</option>
+                                        <option value="2">$500 - $999</option>
+                                        <option value="3">$1000 - $4999</option>
+                                    </select>
+                                <button type="submit" class="sumbit_btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                                
+                            </div>
+                            <!-- End Table Page-->
+                            </div>
+                            <!-- End Table-->
+                        </div>
+                        <!-- End Search Form-->
+                    </div>
+                </div>
+            </div>
+            <!-- End Welcome Area -->
+            <!-- Start Hero Social Area -->
+            <div class="hero_social_btn">
+                <div class="social_title">
+                    <h4>Follow us on Social Media</h6>
+                    <span></span>
+                </div>
+                <div class="social_btns">
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+                    <a href="https://www.behance.net/"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+                    <a href="https://facebook.com/"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
+                </div>
+            </div>
+            <!-- End Hero Social Area -->
+        </section>
+        <!-- End Dorne Welcome Area -->
+
+        <!-- Start Dorne Catagory Area -->
+        <section id="dorne_catagory_area"> 
+            <div class="container">
+                <div class="dorne_catagory_area">
+                    <!-- Start All Catagoties-->
+                    <div class="all_catagories">
+                        <div class="catagory_column">
+                            <!-- Start Single Category Area-->
+                            <div class="single_catagory_area  fadeInUpBig animated" data-wow-delay="0.2s" style="animation-delay: 0.2s; ">
+                                <div class="catagory_content">
+                                    <img src="./Assets/Images/Catagories/Hotel.png" alt="Hotel">
+                                <a href="#">
+                                    <h4>Hotels</h4>
+                                </a>
+                                </div>
+                            </div>
+                            <!-- End Single Category Area-->
+                        </div>
+                        <div class="catagory_column">
+                            <!-- Start Single Category Area-->
+                            <div class="single_catagory_area  fadeInUpBig animated"  data-wow-delay="0.4s" style="animation-delay: 0.4s; ">
+                                <div class="catagory_content">
+                                    <img src="./Assets/Images/Catagories/Reasturant.png" alt="Reasturant" >
+                                <a href="#">
+                                    <h4>Restaurants</h4>
+                                </a>
+                                </div>
+                            <!-- End Single Category Area-->
+                            </div>
+                        </div>
+                        <div class="catagory_column">
+                            <!-- Start Single Category Area-->
+                            <div class="single_catagory_area  fadeInUpBig animated" data-wow-delay="0.6s" style="animation-delay: 0.6s; ">
+                                <div class="catagory_content">
+                                    <img src="./Assets/Images/Catagories/Shopping.png" alt="Shopping" >
+                                <a href="#">
+                                    <h4>Shopping</h4>
+                                </a>
+                                </div>
+                            </div>
+                            <!-- End Single Category Area-->
+                        </div>
+                        <div class="catagory_column">
+                            <!-- Start Single Category Area-->
+                            <div class="single_catagory_area  fadeInUpBig animated" data-wow-delay="0.8s" style="animation-delay: 0.8s; ">
+                                <div class="catagory_content">
+                                    <img src="./Assets/Images/Catagories/Spa.png" alt="Spa" >
+                                <a href="#">
+                                    <h4>Beauty & Spa</h4>
+                                </a>
+                                </div>
+                            <!-- End Single Category Area-->
+                            </div>
+                        </div>
+                        <div class="catagory_column">
+                            <!-- Start Single Category Area-->
+                            <div class="single_catagory_area  fadeInUpBig animated" data-wow-delay="1s" style="animation-delay: 1s; ">
+                                <div class="catagory_content">
+                                    <img src="./Assets/Images/Catagories/Cinema.png" alt="Cinema" >
+                                <a href="#">
+                                    <h4>Cinema</h4>
+                                </a>
+                                </div>
+                            </div>
+                            <!-- End Single Category Area-->
+                        </div>
+                    </div>
+                    <!-- End All Catagoties-->
+                </div>
+            </div>
+        </section>
+        <!-- End Dorne Catagory Area -->
+
+        <!-- Start Dorne About Area-->
+        <section id="dorne_about_area">
+            <div class="container">
+                <div class="dorne_about_area">
+                    <!-- Start About Content-->
+                    <div class="about_content">
+                        <h2>Discover your city with<span>Dorne</span></h2>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce quis tempus elit. Sed efficitur tortor neque, vitae aliquet urna varius sit amet. Ut rhoncus, nunc nec tincidunt volutpat, ex libero.</p>
+                    </div>
+                    <!-- End About Content-->
+                </div>
+            </div>
+        </section>
+        <!-- End Dorne About Area-->
+
+        <!-- Start Editors Pick Area-->
+        <section id="dorne_editors_pick_area">
+            <div class="container">
+                <div class="dorne_editors_pick_area">
+                    <div class="editors_pick_content">
+                        <div class="editors_pick_text">
+                            <span></span>
+                            <h3>Cities you must see</h3>
+                            <p>Editor’s pick</p>
+                            </div>
+                    </div>
+                    <div class="pick_area_card_wrapper">
+                        <!-- Start Pick Area Card-->
+                            <div class="pick_area_card ">
+                                <div class="single_editors_pick_area animated fadeInUp" style="animation-delay: 0.2s;">
+                                    <div class="card_image">
+                                        <img src="./Assets/Images/Pick Area/New York.png" alt="New York">
+                                    </div>
+                                    <div class="editors_pick_info">
+                                    <div class="places_total_destinations ">
+                                        <a href="#" class="location">New York</a>
+                                        <a href="#" class="destination">1643 Destinations</a>
+                                    </div>
+                                    <div class="add_more">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        <!-- End Pick Area Card-->
+                        <!-- Start Pick Area Card-->
+                            <div class="pick_area_card ">
+                                <div class="single_editors_pick_area animated fadeInUp"style="animation-delay: 0.4s;" >
+                                    <div class="card_image">
+                                        <img src="./Assets/Images/Pick Area/Barcelona.png" alt="Barcelona">
+                                    </div>
+                                    <div class="editors_pick_info">
+                                    <div class="places_total_destinations ">
+                                        <a href="#" class="location">Barcelona</a>
+                                        <a href="#" class="destination">943 Destinations</a>
+                                    </div>
+                                    <div class="add_more">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="single_editors_pick_area animated fadeInUp" style="animation-delay: 0.6s;" >
+                                    <div class="card_image">
+                                        <img src="./Assets/Images/Pick Area/Paris.png" alt="Paris">
+                                    </div>
+                                    <div class="editors_pick_info">
+                                    <div class="places_total_destinations ">
+                                        <a href="#" class="location">Paris</a>
+                                        <a href="#" class="destination">243 Destinations</a>
+                                    </div>
+                                    <div class="add_more">
+                                        <a href="#"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                        <!-- End Pick Area Card-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Editors Pick Area-->
+
+        <!-- Start Features Destinations Arae-->
+        <section id="dorne_features_destinations_area">
+            <div class="container_fluid">
+                <div class="dorne_features_destinations_area">
+                    <div class="dorne_features_destination_area_content">
+                        <div class="dorne_features_destinations_area_text">
+                            <span></span>
+                            <h3>Featured destinations</h3>
+                            <p>Editor’s pick</p>
+                        </div>
+                    </div>
+                    <div class="swiper swiperssss">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper destinations-wrapper">
+                          <!-- Slides -->
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Features Destinations Arae-->
+
+
+        <!-- Start Features Resturant Area-->
+        <section id="dorne_features_restaurant_area">
+            <div class="container">
+                <div class="dorne_features_restaurant_area">
+                    <!-- Start Area Content-->
+                    <div class="dorne_features_restaurant_area_content">
+                        <div class="dorne_features_restaurant_area_text">
+                            <span></span>
+                            <h3>Featured Restaurant</h3>
+                            <p>Editor’s pick</p>
+                        </div>
+                    </div>
+                    <!-- End Area Content-->
+                    <!-- Swiper -->
+                    <div class="swiper swiperres">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper restuarant-wrapper">
+                        <!-- Slides -->
+
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Features Resturant Area-->
+
+        <!-- Start Features Events Arae-->
+        <section id="dorne_features_events_area">
+            <div class="container">
+                <div class="dorne_features_events_area">
+                    <!-- Start Area Content-->
+                    <div class="dorne_features_events_area_content">
+                        <div class="dorne_features_events_area_text">
+                            <span></span>
+                            <h3>Featured Events</h3>
+                            <p>Editor’s pick</p>
+                        </div>
+                    </div>
+                    <!-- End Area Content-->
+                    <!-- Start Events Area Card Wrapper-->
+                    <div class="features_events_area_card_wrapper">
+
+                    </div>
+                    <!-- End Events Area Card Wrapper-->
+                   
+                </div>
+            </div>
+        </section>
+        <!-- End Features Events Arae-->
+
+        <!-- Start Dorne Client Area -->
+        <section id="dorne_client_area">
+            <div class="contaier_fluid">
+                <div class="dorne_client_area">
+                    <!-- Start Slience Pictura-->
+                    <figure class="sclient_area_picture">
+                        <img src="./Assets/Images/Client/Pixar.png" alt="Pi'xar">
+                    </figure>
+                    <!-- End Slience Pictura-->
+                    <!-- Start Slience Pictura-->                    
+                    <figure class="sclient_area_picture">
+                        <img src="./Assets/Images/Client/Pirate.png" alt="Pirate">
+                    </figure>
+                    <!-- End Slience Pictura-->
+                    <!-- Start Slience Pictura-->  
+                    <figure class="sclient_area_picture">
+                        <img src="./Assets/Images/Client/Hymalaya.png" alt="Hymayalas">
+                    </figure>
+                    <!-- End Slience Pictura-->
+                    <!-- Start Slience Pictura-->  
+                    <figure class="sclient_area_picture">
+                        <img src="./Assets/Images/Client/Sa.png" alt="Sa">
+                    </figure>      
+                    <!-- End Slience Pictura-->
+                    <!-- Start Slience Pictura-->                
+                    <figure class="sclient_area_picture">
+                        <img src="./Assets/Images/Client/South.png" alt="South and Pouth">
+                    </figure>
+                    <!-- End Slience Pictura-->
+                </div>
+            </div>
+        </section>
+        <!-- End Dorne Client Area -->        
+    </main>
+    <!-- End Main -->
+    <!-- Start Footer -->
+    <footer id="footer">
+        <!-- Start Container_Footer -->
+        <div class="container_footer">
+            <!-- Start All Footer -->
+            <div class="footer">
+                <!-- Start Footer Text -->
+                <div class="footer_text">
+                    <p>                
+                    Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>                
+                    </p>
+                </div>
+                <!-- End Footer Text -->
+                <!-- Start Footer Social  -->
+                <div class="footer_social__btns">
+                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+                    <a href="https://www.behance.net/"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+                    <a href="https://facebook.com/"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
+                </div>
+                <!-- End Footer Social  -->
+            </div>
+            <!-- End All Footer -->
+        </div>
+        <!-- End Container_Footer -->
+    </footer>
+   <!-- End Footer-->
+   <!-- Start Scroll Up-->
+   <div class="scroll_up" id="sroll_btn" onclick="topFunction()">
+    <i class="fas fa-angle-up"></i>
+   </div>
+    <!-- End Scroll Up-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Fonrawesome Script-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+    src="https://kit.fontawesome.com/2950db5552.js"
+    crossorigin="anonymous"></script>
+    <!-- All Page Script-->
+    <script src="./Assets/Js/all_page.js"></script>
+    <!-- Index Page Script-->
+    <script src="./Assets/Js/index.js"></script>
+</body>
+</html>
